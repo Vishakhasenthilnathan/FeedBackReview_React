@@ -10,9 +10,7 @@ if(!feedback.length===0){
     return <p>No feedback yet!</p>
 }
 else{
-    return isLoading ? (
-      <spinner/>
-  )  : (<div className="feedback-list">
+    return  (<div className="feedback-list">
         {
             feedback.map((item)=>(<div>
                <FeedbackItem 
