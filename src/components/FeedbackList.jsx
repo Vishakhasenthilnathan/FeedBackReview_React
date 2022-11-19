@@ -2,7 +2,6 @@ import React from 'react'
 import FeedbackItem from './FeedbackItem'
 import {useContext} from 'react'
 import FeedbackContext  from '../context/FeedbackContext'
-import spinner from './shared/spinner'
 
 function FeedbackList() {
 const {feedback,isLoading} = useContext(FeedbackContext)
