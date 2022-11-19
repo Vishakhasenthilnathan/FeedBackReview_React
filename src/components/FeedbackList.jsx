@@ -2,11 +2,18 @@ import React from 'react'
 import FeedbackItem from './FeedbackItem'
 import {useContext} from 'react'
 import FeedbackContext  from '../context/FeedbackContext'
+import spinner from './shared/spinner'
 
 function FeedbackList() {
-const {feedback} = useContext(FeedbackContext)
+const {feedback,isLoading} = useContext(FeedbackContext)
 
-  return <div className="feedback-list">
+if(!feedback.length===0){
+    return <p>No feedback yet!</p>
+}
+else{
+    return isLoading ? (
+      <spinner/>
+  )  : (<div className="feedback-list">
         {
             feedback.map((item)=>(<div>
                <FeedbackItem 
@@ -15,7 +22,9 @@ const {feedback} = useContext(FeedbackContext)
                 />
             </div>))
         }
-    </div>
+    </div>)
 }
 
+}
+  
 export default FeedbackList

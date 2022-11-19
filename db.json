@@ -1,0 +1,24 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 9,
+      "text": "This is the first feedback on this product. Great work!"
+    },
+    {
+      "text": "Good experience edit",
+      "rating": 6,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "rating": 7,
+      "text": "Service could be improved a lot"
+    },
+    {
+      "rating": 8,
+      "text": "All the very best",
+      "id": 5
+    }
+  ]
+}
